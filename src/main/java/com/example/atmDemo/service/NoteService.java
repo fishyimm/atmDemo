@@ -84,10 +84,5 @@ public class NoteService {
 				+ ", note500Val=" + note500Val + ", note1000Val=" + note1000Val + ", note20Qy=" + note20Qy
 				+ ", note50Qy=" + note50Qy + ", note100Qy=" + note100Qy + ", note500Qy=" + note500Qy + ", note1000Qy="
 				+ note1000Qy + "]";
-	}
-	
-	
-	
-	
-	
+	}	
 }

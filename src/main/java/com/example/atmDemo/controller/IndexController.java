@@ -22,7 +22,6 @@ public class IndexController {
 		model.put("note100Qy", noteService.getNote100Qy() != 0 ? noteService.getNote100Qy() : 0);
 		model.put("note50Qy", noteService.getNote50Qy() != 0 ? noteService.getNote50Qy() : 0);
 		model.put("note20Qy", noteService.getNote20Qy() != 0 ? noteService.getNote20Qy() : 0);
-		
 		return "index";
 	}
 	
