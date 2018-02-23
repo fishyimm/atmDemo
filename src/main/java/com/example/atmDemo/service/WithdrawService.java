@@ -23,7 +23,7 @@ public class WithdrawService {
 		Map<Integer, Integer> noteToWithdraw = new HashMap<Integer, Integer>();
 
 		if (withdrawAmount != 0) {
-			if (withdrawAmount > 1000 && noteService.getNote1000Qy() != 0) {
+			if (withdrawAmount >= 1000 && noteService.getNote1000Qy() != 0) {
 				remainingAmount = withdrawAmount % noteService.getNote1000Val();
 				tempRemainingNoteQy = withdrawAmount / noteService.getNote1000Val();
 				
