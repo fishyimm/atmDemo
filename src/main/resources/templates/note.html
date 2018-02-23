@@ -1,0 +1,35 @@
+<div class="row">
+	<form>
+		<div class="form-group">
+			<label>1000 Notes Quantity</label> <input type="number"
+				class="form-control" id="" placeholder="Quantity"
+				ng-model="notes.note1000Qy" min="0"/>
+		</div>
+		
+		<div class="form-group">
+			<label>500 Notes Quantity</label> <input type="number"
+				class="form-control" id="" placeholder="Quantity"
+				ng-model="notes.note500Qy" min="0" />
+		</div>
+		
+		<div class="form-group">
+			<label>100 Notes Quantity</label> <input type="number"
+				class="form-control" id="" placeholder="Quantity"
+				ng-model="notes.note100Qy" min="0"/>
+		</div>
+		
+		<div class="form-group">
+			<label>50 Notes Quantity</label> <input type="number"
+				class="form-control" id="" placeholder="Quantity"
+				ng-model="notes.note50Qy" min="0"/>
+		</div>
+
+		<div class="form-group">
+			<label>20 Notes Quantity</label> <input type="number"
+				class="form-control" id="" placeholder="Quantity"
+				ng-model="notes.note20Qy" min="0"/>
+		</div>
+		
+		<input ng-click="addNote()" class="btn btn-success" value="Add Note" ng-if="enableBtn()"></input>
+	</form>
+</div>
