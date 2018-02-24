@@ -24,7 +24,6 @@ public class ATMController {
 	
 	@RequestMapping("/addNote")
 	public Note addNote(@RequestBody Map<String, String> requestBody, HttpServletResponse response) {
-		System.out.println("payload" + requestBody);
 		Note note = new Note();
 		if(requestBody != null && requestBody.get("note20Qy") != null && requestBody.get("note50Qy") != null) {
 			int note1000Qy = Integer.valueOf(requestBody.get("note1000Qy").toString());
@@ -51,7 +50,6 @@ public class ATMController {
 	
 	@RequestMapping("/getmoney")
 	public Note withdraw(@RequestBody Map<String, String> requestBody, HttpServletResponse response) {
-		System.out.println("withdraw" + requestBody.get("amount"));
 		Note note = null;
 		if(requestBody.get("amount") != null) {
 			note = withdrawService.withdraw(Integer.valueOf(requestBody.get("amount").toString()));

@@ -7,34 +7,34 @@
 <div class="row">
 	<form>
 		<div class="form-group">
-			<h2>withdraw amount:</h2> <input type="number"
+			<h2>Enter Amount:</h2> <input type="number"
 				class="form-control" id="" placeholder="amount" ng-model="amount" min="0"/>
 		</div>
 		
 		<input ui-sref="note" class="btn btn-warning" value="Back"></input>
-		<input ng-click="withdraw()" class="btn btn-success" value="Withdraw" ng-if="amount"></input>
+		<input ng-click="withdraw()" class="btn btn-success" value="Confirm" ng-if="amount"></input>
 	</form>
 </div>
 
 <div class="row">
 	<div class="form-group">
-		<label>1000 Notes left: {{notes.note1000Qy}}</label>
+		<label>1000 Notes remaining: {{notes.note1000Qy}}</label>
 	</div>
 	
 	<div class="form-group">
-		<label>500 Notes left: {{notes.note500Qy}}</label>
+		<label>500 Notes remaining: {{notes.note500Qy}}</label>
 	</div>
 	
 	<div class="form-group">
-		<label>100 Notes left: {{notes.note100Qy}}</label>
+		<label>100 Notes remaining: {{notes.note100Qy}}</label>
 	</div>
 	
 	<div class="form-group">
-		<label>50 Notes left: {{notes.note50Qy}}</label>
+		<label>50 Notes remaining: {{notes.note50Qy}}</label>
 	</div>
 	
 	<div class="form-group">
-		<label>20 Notes left: {{notes.note20Qy}}</label>
+		<label>20 Notes remaining: {{notes.note20Qy}}</label>
 	</div>
 </div>
 
